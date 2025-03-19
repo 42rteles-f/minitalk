@@ -6,7 +6,7 @@
 /*   By: rteles-f <rteles-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 16:19:08 by rteles-f          #+#    #+#             */
-/*   Updated: 2023/03/31 23:43:15 by rteles-f         ###   ########.fr       */
+/*   Updated: 2025/03/19 17:47:32 by rteles-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ typedef unsigned int		t_ui;
 
 int	ft_printf(const char *string, ...);
 int	put_var(va_list *arg_list, char var);
-int	int_case(va_list *arg_list);
+int	int_case(long long number);
 int	pointer_case(size_t number);
-int	char_case(va_list *arg_list);
-int	string_case(va_list *arg_list);
-int	put_base_number(t_ull n, char *base, t_ui bsize);
+int	char_case(int c);
+int	string_case(char *string);
+int	put_base_number(t_ull n, char *base, t_ull bsize);
 
 #endif
